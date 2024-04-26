@@ -1,0 +1,40 @@
+@media only screen and (min-width: 600px) {
+  .bar .cart {
+    margin-right: 5%;
+    right: 1px;
+    .cart-icon {
+      display: none;
+    }
+    .cart-text {
+      display: block;
+    }
+  }
+
+  .mini-cart {
+    right: 5%;
+    width: 30%;
+  }
+
+  .product {
+    display: flex;
+    gap: 2em;
+    max-width: 90%;
+    margin: 0 auto;
+    .product-image {
+      max-width: 45%;
+      max-height: 85vh;
+      img {
+        max-height: 100%;
+        object-fit: contain;
+      }
+    }
+    .product-info {
+      max-width: 45%;
+    }
+    .product-price {
+      padding: 0.5em 0;
+      border-top: $header-bg 1px solid;
+      border-bottom: $header-bg 1px solid;
+    }
+  }
+}

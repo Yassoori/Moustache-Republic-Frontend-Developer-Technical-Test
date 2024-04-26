@@ -1,0 +1,53 @@
+// ------------------------ Colors ------------------------
+
+$required-star: #c90000;
+$header-bg: #f6f6f7;
+$font-light: #888888;
+$font-dark: #222222;
+$border-light: #cccccc;
+$border-dark: #222222;
+
+// ------------------------ Fonts ------------------------
+
+@import url("https://fonts.googleapis.com/css?family=Quicksand");
+
+// ------------------------ Responsive ------------------------
+
+@import "responsive/mobile";
+@import "responsive/tablet";
+@import "responsive/desktop";
+
+// ------------------------ Reset ------------------------
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+body {
+  width: 100%;
+  min-height: 99.4vh;
+  box-sizing: border-box;
+  height: 100vh;
+
+  ::-webkit-scrollbar {
+    display: none;
+  }
+
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
+}
+
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  text-align: left;
+  font-family: "Quicksand", sans-serif;
+}

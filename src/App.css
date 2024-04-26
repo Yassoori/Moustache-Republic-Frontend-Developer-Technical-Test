@@ -1,0 +1,237 @@
+@import url("https://fonts.googleapis.com/css?family=Quicksand");
+h2,
+h3 {
+  color: #222222;
+}
+
+p,
+button,
+h4,
+img {
+  color: #888888;
+  font-size: 14px;
+}
+
+.bar {
+  background-color: #f6f6f7;
+  padding: 0 1em;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+.bar .cart {
+  float: right;
+  display: flex;
+  align-items: center;
+  padding: 0.5em;
+  border: #f6f6f7 2px solid;
+  border-bottom: none;
+  z-index: 99;
+  position: relative;
+}
+.bar .cart .cart-text {
+  display: none;
+}
+.bar .cart .cart-text,
+.bar .cart .cart-icon,
+.bar .cart p {
+  margin: 0 2px;
+}
+
+.cart-icon {
+  color: #888888;
+}
+
+#open {
+  border: #cccccc 2px solid;
+  border-bottom: none;
+  background-color: white;
+}
+#open p,
+#open .cart-icon {
+  color: #222222;
+}
+
+.mini-cart {
+  position: absolute;
+  top: 49.5px;
+  padding: 1em;
+  margin: 0 1em;
+  border: #cccccc 2px solid;
+  background-color: white;
+  display: none;
+}
+.mini-cart .cart-item {
+  display: flex;
+  margin-bottom: 2em;
+}
+.mini-cart .cart-item p {
+  margin-bottom: 1em;
+  color: #222222;
+}
+.mini-cart img {
+  max-width: 30%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.visible {
+  display: block;
+}
+
+.product {
+  display: block;
+  padding: 1rem;
+}
+
+.product-image {
+  max-width: 100%;
+  margin-bottom: 2em;
+}
+.product-image img {
+  width: 100%;
+}
+
+.product-info .product-text {
+  margin-bottom: 2em;
+}
+.product-info .product-text .product-title,
+.product-info .product-text .product-price,
+.product-info .product-text .product-description {
+  margin-bottom: 1em;
+}
+.product-info .product-size .size-text {
+  display: flex;
+  margin-bottom: 1em;
+}
+.product-info .product-size .size-text .size-label {
+  margin-right: 0.5em;
+}
+.product-info .product-size .size-text .size-label::after {
+  content: "*";
+  color: #c90000;
+}
+.product-info .product-size .size-text .size-selected {
+  color: #222222;
+}
+.product-info .product-size .button-size-container {
+  display: flex;
+  margin-bottom: 1em;
+}
+.product-info .product-size .button-size-container .button-size {
+  padding: 4px;
+}
+
+button {
+  background: none;
+  font-size: 14px;
+  border: #cccccc 2px solid;
+  margin: 2px;
+  min-width: 3em;
+  height: 3em;
+}
+
+.active {
+  border: #222222 2px solid;
+  color: #222222;
+}
+
+.button-addtocart {
+  background: none;
+  border: #222222 2px solid;
+  color: #222222;
+  padding: 0px 1.5em;
+}
+
+.button-addtocart:hover {
+  background-color: #222222;
+  color: white;
+  transition: 0.2s ease;
+}
+
+.error-message {
+  color: #c90000;
+}
+
+@media only screen and (min-width: 600px) {
+  .bar .cart {
+    margin-right: 5%;
+    right: 1px;
+  }
+  .bar .cart .cart-icon {
+    display: none;
+  }
+  .bar .cart .cart-text {
+    display: block;
+  }
+  .mini-cart {
+    right: 5%;
+    width: 30%;
+  }
+  .product {
+    display: flex;
+    gap: 2em;
+    max-width: 90%;
+    margin: 0 auto;
+  }
+  .product .product-image {
+    max-width: 45%;
+    max-height: 85vh;
+  }
+  .product .product-image img {
+    max-height: 100%;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  .product .product-info {
+    max-width: 45%;
+  }
+  .product .product-price {
+    padding: 0.5em 0;
+    border-top: #f6f6f7 1px solid;
+    border-bottom: #f6f6f7 1px solid;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .bar .cart {
+    margin-right: 10%;
+    right: 3px;
+  }
+  .mini-cart {
+    right: 10%;
+    width: 20%;
+  }
+  .product {
+    gap: 4em;
+    max-width: 80%;
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+body {
+  width: 100%;
+  min-height: 99.4vh;
+  box-sizing: border-box;
+  height: 100vh;
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
+}
+body ::-webkit-scrollbar {
+  display: none;
+}
+
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  text-align: left;
+  font-family: "Quicksand", sans-serif;
+}/*# sourceMappingURL=App.css.map */
