@@ -1,6 +1,9 @@
 # Moustache Republic Frontend Developer Technical Test
 
-You can run the build with the terminal command:
+Vercel Deployment:
+https://moustache-republic-frontend-developer-technical-test.vercel.app/
+
+You can also run the build with the terminal command:
 
     "npm run dev"
 
